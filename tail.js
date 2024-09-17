@@ -2,15 +2,18 @@
 
 
 const tail = function(arr) {
-  if (!Array.isArray(arr) || arr.length ===0) {
+  let tempArry = [];
+  if (!Array.isArray(arr)) {
     return undefined;
   }
-  let tempArry = [];
-  for (let i=0; i < arr.length; i++)
-  {
+  if (arr.length >= 0 && arr.length <= 1) {
+    return tempArry;
+  }
+
+  for (let i = 1; i < arr.length; i++) {
     tempArry[i] = arr[i];
   }
-  tempArry.splice(0,1);
+ 
   return tempArry;
 };
 const assertEqual = function(actual, expected) {
@@ -30,3 +33,10 @@ assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
+
+const words1 = ["Yo Yo"];
+tail(words1);
+assertEqual(words1.length, 1); 
+const words2 = [];
+tail(words2);
+assertEqual(words2.length, 0); 
