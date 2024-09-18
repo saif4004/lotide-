@@ -28,8 +28,9 @@ console.log(eqArrays([1, 2, 3], [3, 2, 1]));
 console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
 console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
 console.log(eqArrays([], []));
+console.log(eqArrays([1, 9, 3], [1, 2, 3]));
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 1, 3], [1, 2, 3]), false);
-assertEqual(eqArrays([1, 9, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 9, 3], [1, 2, 3]), false);
 assertEqual(eqArrays([], []), true);
 
