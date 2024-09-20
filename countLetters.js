@@ -24,5 +24,7 @@ const countLetters = function(sentStr) {
 
 const testStr = "LHL";
 console.log(countLetters(testStr));
+console.log(countLetters("lighthouse in the house"));
 assertEqual(testStr, "LHL");
+assertEqual("lighthouse in the house", "lighthouse in the house")
 

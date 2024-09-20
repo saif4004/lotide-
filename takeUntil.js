@@ -2,11 +2,7 @@ const eqArrays = function(arr1,arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
-  let tempLength = arr1.length;
-  if (arr2.length > tempLength) {
-    tempLength = arr2.length;
-  }
-  for (let i = 0; i < tempLength; i++) {
+  for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
     }
@@ -30,6 +26,7 @@ const takeUntil = function(array, callback) {
     }
     resultArr.push(item);
   }
+  return resultArr;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
