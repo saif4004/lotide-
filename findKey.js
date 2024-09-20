@@ -18,7 +18,7 @@ const findKey = function(obj1,callback) {
 };
 
 
-findKey(
+let result = findKey(
   {
     "Blue Hill": { stars: 1 },
     Akaleri: { stars: 3 },
@@ -29,3 +29,6 @@ findKey(
   },
   (x) => x.stars === 2
 ); // => "noma"
+
+
+assertEqual(result,"noma");
