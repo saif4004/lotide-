@@ -37,6 +37,8 @@ const without = function(source,itemsToRemove) {
   return newSource;
 };
 
+module.exports = without;
+
 // let tempArray = without(["Mike", "Zack", 33, "Paige"], ["Mike","Zack"]);
 
 // console.log(tempArray);

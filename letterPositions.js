@@ -38,6 +38,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 console.log(letterPositions("hello"));
 console.log(letterPositions("lighthouse in the house"));
 

@@ -22,6 +22,8 @@ const countLetters = function(sentStr) {
   return results;
 };
 
+module.exports = countLetters;
+
 const testStr = "LHL";
 console.log(countLetters(testStr));
 console.log(countLetters("lighthouse in the house"));
