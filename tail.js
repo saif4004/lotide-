@@ -9,9 +9,7 @@ const tail = function(arr) {
     return tempArry;
   }
 
-  for (let i = 1; i < arr.length; i++) {
-    tempArry[i-1] = arr[i];
-  }
+ tempArry = arr.slice(1);
  
   return tempArry;
 };
