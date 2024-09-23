@@ -3,13 +3,11 @@ const tail = require("../tail");
 //TEST CODE
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
+console.log(result);
 assertEqual(result.length, 2);
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); 
-assertEqual(words.length, 3); 
-const words1 = ["Yo Yo"];
-tail(words1);
-assertEqual(words1.length, 1); 
-const words2 = [];
-tail(words2);
+const words = tail(["Yo Yo", "Lighthouse", "Labs"]);
+assertEqual(words.length, 2); 
+const words1 = tail(["Yo Yo"]);
+assertEqual(words1.length, 0); 
+const words2 = tail([]);
 assertEqual(words2.length, 0); 
