@@ -10,7 +10,7 @@ const tail = function(arr) {
   }
 
   for (let i = 1; i < arr.length; i++) {
-    tempArry[i] = arr[i];
+    tempArry[i-1] = arr[i];
   }
  
   return tempArry;
