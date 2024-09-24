@@ -40,9 +40,9 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions;
 
-console.log(letterPositions("hello"));
-console.log(letterPositions("lighthouse in the house"));
+// console.log(letterPositions("hello"));
+// console.log(letterPositions("lighthouse in the house"));
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("hello").e, [1]);
 
 

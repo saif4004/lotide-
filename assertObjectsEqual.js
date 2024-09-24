@@ -40,14 +40,14 @@ const assertObjectsEqual = function (actual, expected) {
 };
 module.exports = assertObjectsEqual;
 // Test cases
-const obj1 = { a: '1', b: 2 };
-const obj2 = { b: 2, a: '1' };
-const obj3 = { a: '1', b: '2' };
+// const obj1 = { a: '1', b: 2 };
+// const obj2 = { b: 2, a: '1' };
+// const obj3 = { a: '1', b: '2' };
 
-console.log('Test 1: Should pass');
-assertObjectsEqual(obj1, obj2); // Expected to pass
+// console.log('Test 1: Should pass');
+// assertObjectsEqual(obj1, obj2); // Expected to pass
 
-console.log('Test 2: Should fail');
-assertObjectsEqual(obj1, obj3); // Expected to fail
+// console.log('Test 2: Should fail');
+// assertObjectsEqual(obj1, obj3); // Expected to fail
 
 
